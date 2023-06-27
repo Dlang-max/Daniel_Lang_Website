@@ -1,0 +1,68 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+main {
+  color: white;
+  position: absolute;
+  width: 100%;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  /*Shrink Vertical distance between grid rows*/
+  
+}
+
+header{
+  background-color: black;
+  grid-column: 1 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: 100px;
+  margin-top: 0px;
+}
+
+section{
+  background-color: black;
+  position: relative;
+  grid-column: 7 / span 4;
+  grid-row: 2 / span 1;
+  font-size: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 100px;
+}
+
+.education{
+  background-color: black;
+  position: relative;
+  grid-column: 4 / span 4;
+  grid-row: 3 / span 1;
+  font-size: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 100px;
+  height: 40%; 
+}
+
+@media (max-width: 750px) {
+  header {
+    grid-column: 2 / span 7;
+    font-size: 1.5rem;
+    padding: 1rem;
+    /* border-radius: 10px; */
+
+  }
+
+  section{
+    height: 80%;
+    padding: 1rem;
+    grid-column: 6 / span 4;
+
+  }
+}
